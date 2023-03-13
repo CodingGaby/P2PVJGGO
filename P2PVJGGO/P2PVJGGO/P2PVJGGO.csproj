@@ -56,12 +56,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Country.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Country.Designer.cs">
+      <DependentUpon>Country.cs</DependentUpon>
+    </Compile>
     <Compile Include="Data\City.cs" />
     <Compile Include="Data\Country.cs" />
     <Compile Include="Data\DataContext.cs" />
     <Compile Include="Data\Employee.cs" />
     <Compile Include="Data\Enterprise.cs" />
     <Compile Include="Data\User.cs" />
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enterprise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Enterprise.Designer.cs">
+      <DependentUpon>Enterprise.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\202303131537584_initial.cs" />
     <Compile Include="Migrations\202303131537584_initial.designer.cs">
       <DependentUpon>202303131537584_initial.cs</DependentUpon>
@@ -75,6 +93,15 @@
     <Compile Include="User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Country.resx">
+      <DependentUpon>Country.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Enterprise.resx">
+      <DependentUpon>Enterprise.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202303131537584_initial.resx">
       <DependentUpon>202303131537584_initial.cs</DependentUpon>
     </EmbeddedResource>
