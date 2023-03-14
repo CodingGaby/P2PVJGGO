@@ -9,7 +9,7 @@ namespace P2PVJGGO.Data
         public string State { get; set; }
         public string ZipCode { get; set; }
         public int Population { get; set; }
-        public string Landmark { get; set; }
+        public string TimeZone { get; set; }
 
         public int CountryId { get; set; }
         public Country Country { get; set; }
@@ -17,14 +17,14 @@ namespace P2PVJGGO.Data
         public ICollection<Employee> Employees { get; set; }
         public ICollection<Enterprise> Enterprises { get; set; }
 
-        public City(int id, string name, string state, string zipCode, int population, string landmark, int countryId, Country country)
+        public City(int id, string name, string state, string zipCode, int population, string timezone, int countryId, Country country)
         {
             Id = id;
             Name = name;
             State = state;
             ZipCode = zipCode;
             Population = population;
-            Landmark = landmark;
+            TimeZone = timezone;
             CountryId = countryId;
             Country = country;
             Employees = new List<Employee>();
